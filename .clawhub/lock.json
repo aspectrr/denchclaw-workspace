@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "version": "3.0.10",
+      "installedAt": 1774962341263
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774962488043
+    },
+    "market-research": {
+      "version": "1.0.1",
+      "installedAt": 1774966464310
+    },
+    "planning-with-files": {
+      "version": "2.26.1",
+      "installedAt": 1774966590974
+    }
+  }
+}

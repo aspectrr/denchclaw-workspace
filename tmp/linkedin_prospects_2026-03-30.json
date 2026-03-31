@@ -1,0 +1,252 @@
+[
+  {
+    "reddit_post_id": "1rji2do",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1rji2do/anyone_here_successfully_moved_tbs_of_historical/",
+    "post_title": "TBs of historical data from Splunk to Elasticsearch migration nightmare",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops splunk migration",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "TBs of historical data from Splunk to Elasticsearch migration nightmare",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1rji2do/anyone_here_successfully_moved_tbs_of_historical/",
+      "description": "Migrating terabytes of historical data from Splunk to Elasticsearch. Memory spikes, exports crawl, bulk indexing chokes.",
+      "subreddit": "r/elasticsearch",
+      "priority": "High"
+    }
+  },
+  {
+    "reddit_post_id": "1qajdeu",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1qajdeu/we_lost_35k_documents_migrating_elasticsearch_56/",
+    "post_title": "Lost 35k documents migrating Elasticsearch 5.6 \u2192 9.x",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Lost 35k documents migrating Elasticsearch 5.6 \u2192 9.x",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1qajdeu/we_lost_35k_documents_migrating_elasticsearch_56/",
+      "description": "Reindex completed successfully but ~35,000 documents missing. Silent data loss during migration.",
+      "subreddit": "r/elasticsearch",
+      "priority": "Critical"
+    }
+  },
+  {
+    "reddit_post_id": "1jh5h5c",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1jh5h5c/has_anyone_experienced_log_loss_in_logstash/",
+    "post_title": "Log loss in Logstash - cannot detect how many logs are lost",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops logstash pipeline",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Log loss in Logstash - cannot detect how many logs are lost",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1jh5h5c/has_anyone_experienced_log_loss_in_logstash/",
+      "description": "Experiencing log loss with Logstash. Cannot monitor or detect how many logs are actually lost.",
+      "subreddit": "r/elasticsearch",
+      "priority": "High"
+    }
+  },
+  {
+    "reddit_post_id": "1j0e817",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1j0e817/cluster_has_over_2_years_data_collection_and_i/",
+    "post_title": "Re-indexing 2+ years of data for GeoIP - errors on errors",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Re-indexing 2+ years of data for GeoIP - errors on errors",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1j0e817/cluster_has_over_2_years_data_collection_and_i/",
+      "description": "Looking to re-index 2+ years of data. Version 8.x complications. Looking for someone with experience to partner with.",
+      "subreddit": "r/elasticsearch",
+      "priority": "Medium"
+    }
+  },
+  {
+    "reddit_post_id": "1ixsx22",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1ixsx22/elastic_agents_intermittently_goes_offline/",
+    "post_title": "Elastic Agents intermittently go offline - Kubernetes/Helm setup",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops kubernetes",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Elastic Agents intermittently go offline - Kubernetes/Helm setup",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1ixsx22/elastic_agents_intermittently_goes_offline/",
+      "description": "Elastic Stack 8.16.1 via Helm Chart on Kubernetes. Agents intermittently go offline. Fleet Server networking issues.",
+      "subreddit": "r/elasticsearch",
+      "priority": "High"
+    }
+  },
+  {
+    "reddit_post_id": "1hxdg67",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1hxdg67/so_i_was_working_on_configuring_thehive_for_my/",
+    "post_title": "Home SOC lab ELK stack setup - TheHive configuration",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops security soc siem",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Home SOC lab ELK stack setup - TheHive configuration",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1hxdg67/so_i_was_working_on_configuring_thehive_for_my/",
+      "description": "Configuring TheHive for home SOC lab, getting errors while starting ELK.",
+      "subreddit": "r/elasticsearch",
+      "priority": "Low"
+    }
+  },
+  {
+    "reddit_post_id": "1kremv6",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1kremv6/logstash_issue_with_certsssl/",
+    "post_title": "Logstash Issue with Certs/SSL",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops logstash pipeline security",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Logstash Issue with Certs/SSL",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1kremv6/logstash_issue_with_certsssl/",
+      "description": "Logstash not sending logs through to Opensearch. SSLHandshakeException, PKIX path validation failed.",
+      "subreddit": "r/elasticsearch",
+      "priority": "High"
+    }
+  },
+  {
+    "reddit_post_id": "1kqzjee",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1kqzjee/struggling_hard_with_tls/",
+    "post_title": "Struggling Hard with TLS - Ansible deployment",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops security",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Struggling Hard with TLS - Ansible deployment",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1kqzjee/struggling_hard_with_tls/",
+      "description": "Setting up test environment with Ansible playbooks. TLS configuration issues. Cannot access Elasticsearch via web interface.",
+      "subreddit": "r/elasticsearch",
+      "priority": "Medium"
+    }
+  },
+  {
+    "reddit_post_id": "1iyu2xb",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1iyu2xb/bootstrap_a_cluster_with_a_single_master_and_two/",
+    "post_title": "Bootstrap cluster - single master + two data nodes not working",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Bootstrap cluster - single master + two data nodes not working",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1iyu2xb/bootstrap_a_cluster_with_a_single_master_and_two/",
+      "description": "Cannot get data nodes to join cluster. Configuration issues with elasticsearch.yml.",
+      "subreddit": "r/elasticsearch",
+      "priority": "Medium"
+    }
+  },
+  {
+    "reddit_post_id": "1iroejw",
+    "reddit_url": "https://www.reddit.com/r/elasticsearch/comments/1iroejw/need_help_elastic_fleet_server_enrollment_fails/",
+    "post_title": "Elastic Fleet Server Enrollment Fails Every Time",
+    "note": "Post ID extracted. Use Reddit MCP (reddit_get_post) to get author username, then search LinkedIn.",
+    "linkedin_search_queries": [
+      {
+        "query": "site:linkedin.com/in/ elasticsearch elk devops",
+        "method": "web_search",
+        "rationale": "Find LinkedIn profiles mentioning these ELK keywords"
+      },
+      {
+        "query": "site:linkedin.com/in/ \"elasticsearch\" \"engineer\"",
+        "method": "linkedin_mcp",
+        "rationale": "Search LinkedIn directly for Elastic engineers"
+      }
+    ],
+    "lead_data": {
+      "title": "Elastic Fleet Server Enrollment Fails Every Time",
+      "url": "https://www.reddit.com/r/elasticsearch/comments/1iroejw/need_help_elastic_fleet_server_enrollment_fails/",
+      "description": "Failed all four attempts at Fleet Server setup. Enrollment failure errors. Timed out waiting for Fleet Server.",
+      "subreddit": "r/elasticsearch",
+      "priority": "High"
+    }
+  }
+]

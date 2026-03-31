@@ -1,0 +1,194 @@
+[
+  {
+    "id": "d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
+    "title": "Okay, I want to set up a way to like mark down exactly what ...",
+    "createdAt": 1774987070174,
+    "updatedAt": 1774989051590,
+    "messageCount": 4,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774987070174
+  },
+  {
+    "id": "a2cd8123-4cd2-4d66-b27c-f8798c136822",
+    "title": "So something else I was thinking about was that within my ow...",
+    "createdAt": 1774974444414,
+    "updatedAt": 1774988782324,
+    "messageCount": 10,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:a2cd8123-4cd2-4d66-b27c-f8798c136822",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774974444414
+  },
+  {
+    "id": "agent:main:subagent:e3e884f8-338b-4eca-ab79-c7339e02b03c",
+    "title": "New Chat",
+    "createdAt": 1774967021880.9492,
+    "updatedAt": 1774967023882.5447,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:28e13528-563b-4c16-8392-af6a9548cbe7",
+    "title": "New Chat",
+    "createdAt": 1774967009582.961,
+    "updatedAt": 1774967011590.8728,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:b4f8f2ea-524a-4da4-8cba-032e96e41dfe",
+    "title": "New Chat",
+    "createdAt": 1774967008598.5305,
+    "updatedAt": 1774967008599.6804,
+    "messageCount": 1
+  },
+  {
+    "id": "bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
+    "title": "Hey, I just added some new skills to you. I added a market r...",
+    "createdAt": 1774966799733,
+    "updatedAt": 1774989291749,
+    "messageCount": 18,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774966799733
+  },
+  {
+    "id": "c0b3ae93-ff52-47c1-90b2-af3530b456c1",
+    "title": "Hey, can we start drafting messages for all people on Linked...",
+    "createdAt": 1774960529169,
+    "updatedAt": 1774966938664,
+    "messageCount": 24,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:c0b3ae93-ff52-47c1-90b2-af3530b456c1",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774960529169
+  },
+  {
+    "id": "5380c24c-efb9-429b-a639-aa990a7eb024",
+    "title": "Is it worth it to start building out the agent process furth...",
+    "createdAt": 1774921401707,
+    "updatedAt": 1774922188618,
+    "messageCount": 8,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:5380c24c-efb9-429b-a639-aa990a7eb024",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774921401707
+  },
+  {
+    "id": "2d7f8fbc-9bc0-4f8a-a9dd-1db7c278c996",
+    "title": "Hey, I think all these ideas are good. But so yeah, do all t...",
+    "createdAt": 1774919902328,
+    "updatedAt": 1774921883318,
+    "messageCount": 12,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:2d7f8fbc-9bc0-4f8a-a9dd-1db7c278c996",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774919902328
+  },
+  {
+    "id": "74a9cab6-f821-487e-aab8-4fc9125eadb5",
+    "title": "Hey, did you find some other Paul Graham essays that would b...",
+    "createdAt": 1774920176384,
+    "updatedAt": 1774921060909,
+    "messageCount": 4,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:74a9cab6-f821-487e-aab8-4fc9125eadb5",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774920176384
+  },
+  {
+    "id": "3c39a77c-4176-4282-bfcf-e54ad3b1a922",
+    "title": "Hey. I am I've just added some MCP servers for to use. So I ...",
+    "createdAt": 1774914381206,
+    "updatedAt": 1774919773886,
+    "messageCount": 18,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:3c39a77c-4176-4282-bfcf-e54ad3b1a922",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774914381206
+  },
+  {
+    "id": "agent:main:subagent:405ee020-bdbf-49f7-9f35-b686c6692ac4",
+    "title": "New Chat",
+    "createdAt": 1774915660736.5144,
+    "updatedAt": 1774916076728.8777,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:6c8f4a11-ef14-4dd6-a85c-a22402d78993",
+    "title": "New Chat",
+    "createdAt": 1774915663367.8533,
+    "updatedAt": 1774916036471.9001,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:76fc3351-948f-49fa-b46f-054cde469d8e",
+    "title": "New Chat",
+    "createdAt": 1774915793133.132,
+    "updatedAt": 1774915793134.64,
+    "messageCount": 1
+  },
+  {
+    "id": "bf234f0a-500b-43f7-b537-8b6d71adef74",
+    "title": "Hey Denish, so I'm trying to figure out what the correct way...",
+    "createdAt": 1774895747408,
+    "updatedAt": 1774905013397,
+    "messageCount": 32,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:bf234f0a-500b-43f7-b537-8b6d71adef74",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774895747408
+  },
+  {
+    "id": "758020e9-7267-48f8-b14b-fd9e558914d8",
+    "title": "Hey could you install these skills into your skills director...",
+    "createdAt": 1774895134012,
+    "updatedAt": 1774895205817,
+    "messageCount": 4,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:758020e9-7267-48f8-b14b-fd9e558914d8",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774895134012
+  },
+  {
+    "id": "f7378285-99e4-428e-b280-7f22a9574eee",
+    "title": "Hey! Could you add all the people from all pages of this spr...",
+    "createdAt": 1774893979853,
+    "updatedAt": 1774894489575,
+    "messageCount": 2,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:f7378285-99e4-428e-b280-7f22a9574eee",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774893979853
+  },
+  {
+    "id": "agent:main:subagent:5d69bc5e-c8a7-4935-81ed-ddb22025048d",
+    "title": "New Chat",
+    "createdAt": 1774894166494.8965,
+    "updatedAt": 1774894166496.0876,
+    "messageCount": 1
+  }
+]

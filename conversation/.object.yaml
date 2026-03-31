@@ -1,0 +1,66 @@
+name: conversation
+description: Peer conversations with ELK engineers
+icon: 💬
+default_view: table
+fields:
+  - name: Contact Name
+    type: text
+    sort_order: 1
+  - name: Company
+    type: text
+    sort_order: 2
+  - name: Company Size
+    type: text
+    sort_order: 3
+  - name: Team Size
+    type: text
+    sort_order: 4
+  - name: Title
+    type: text
+    sort_order: 5
+  - name: Date
+    type: date
+    sort_order: 6
+  - name: Primary Pain Point
+    type: text
+    sort_order: 7
+  - name: Hours Per Week
+    type: number
+    sort_order: 8
+  - name: On Call
+    type: boolean
+    sort_order: 9
+  - name: Stack Type
+    type: enum
+    enum_values: ["Self-managed", "Elastic Cloud", "Hybrid", "Other"]
+    sort_order: 10
+  - name: Tools Used
+    type: tags
+    sort_order: 11
+  - name: Secondary Pains
+    type: richtext
+    sort_order: 12
+  - name: Current Solutions
+    type: richtext
+    sort_order: 13
+  - name: Notes
+    type: richtext
+    sort_order: 14
+  - name: Relationship Stage
+    type: enum
+    enum_values: ["Cold", "Warm", "Active", "Advocate"]
+    sort_order: 15
+  - name: Follow Up
+    type: boolean
+    sort_order: 16
+  - name: LinkedIn URL
+    type: url
+    sort_order: 17
+  - name: Source
+    type: text
+    sort_order: 18
+  - name: Related Lead
+    type: relation
+    related_object: lead
+    relationship_type: many_to_one
+    sort_order: 19

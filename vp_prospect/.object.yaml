@@ -1,0 +1,71 @@
+name: vp_prospect
+description: VP/Director/Team Lead prospects with budget authority for understaffed ELK teams
+default_view: table
+entry_count: 10
+fields:
+  - name: Full Name
+    type: text
+    sort_order: 1
+  - name: Title
+    type: text
+    sort_order: 2
+  - name: Company
+    type: text
+    sort_order: 3
+  - name: Company Size
+    type: enum
+    enum_values:
+      - 1-50 employees
+      - 51-200 employees
+      - 201-500 employees
+      - 501-1000 employees
+      - 1000+
+    sort_order: 4
+  - name: LinkedIn URL
+    type: url
+    sort_order: 5
+  - name: Status
+    type: enum
+    enum_values:
+      - Not Connected
+      - Pending
+      - Connected
+      - Replied
+      - In Conversation
+      - Not Interested
+      - Converted
+    sort_order: 6
+  - name: Priority
+    type: enum
+    enum_values:
+      - High
+      - Medium
+      - Low
+    sort_order: 7
+  - name: Last Activity
+    type: date
+    sort_order: 8
+  - name: Notes
+    type: richtext
+    sort_order: 9
+  - name: Pain Signals
+    type: tags
+    sort_order: 10
+views:
+  - name: AllProspects
+    filter: null
+  - name: HighPriority
+    filter:
+      field: Priority
+      operator: equals
+      value: High
+  - name: PendingConnections
+    filter:
+      field: Status
+      operator: equals
+      value: Pending
+  - name: Connected
+    filter:
+      field: Status
+      operator: any
+      value: [Connected, Replied, In Conversation]

@@ -1,0 +1,20 @@
+id: "seed_obj_company_0000000000000"
+name: "company"
+description: "Company tracking"
+icon: "building-2"
+default_view: "table"
+entry_count: 3
+fields:
+  - name: "Company Name"
+    type: text
+    required: true
+  - name: "Industry"
+    type: enum
+    values: ["Technology","Finance","Healthcare","Education","Retail","Other"]
+  - name: "Website"
+    type: text
+  - name: "Type"
+    type: enum
+    values: ["Client","Partner","Vendor","Prospect"]
+  - name: "Notes"
+    type: richtext

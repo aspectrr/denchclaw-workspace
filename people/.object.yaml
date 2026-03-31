@@ -1,0 +1,36 @@
+id: "seed_obj_people_00000000000000"
+name: "people"
+description: "People and contacts"
+icon: "users"
+default_view: "table"
+entry_count: 94
+fields:
+  - name: "Full Name"
+    type: text
+    required: true
+  - name: "Email Address"
+    type: email
+  - name: "Phone Number"
+    type: phone
+  - name: "Company"
+    type: text
+  - name: "Status"
+    type: enum
+    values: ["Active", "Inactive", "Lead"]
+  - name: "Notes"
+    type: richtext
+  - name: "LinkedIn URL"
+    type: url
+  - name: "GitHub Username"
+    type: text
+  - name: "Forum Link"
+    type: url
+  - name: "Source"
+    type: enum
+    values: ["Elastic Forum", "GitHub", "Reddit", "Stack Overflow", "GitHub Ansible", "LinkedIn", "Blog"]
+  - name: "Outreach Status"
+    type: enum
+    values: ["Not Attempted", "Connection Sent", "Already Pending", "Connected", "Replied", "No Response", "Declined"]
+  - name: "Priority"
+    type: enum
+    values: ["High", "Medium", "Low"]
