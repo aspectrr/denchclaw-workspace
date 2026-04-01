@@ -25,11 +25,22 @@ Title keywords (in priority order):
 4. "VP of Infrastructure" / "VP of Engineering" (platform-heavy)
 5. "Engineering Manager" (Platform / DevOps / SRE / Observability)
 
+COMPANY SIZE (CRITICAL FILTER):
+- Target: 50-500 employees (or team of 2-10 engineers managing ELK)
+- Acceptable: 500-2000 employees
+- AVOID: 2000+ employees (too many resources, too many tools)
+
+ELK CRITICALITY:
+- Target: ELK is mission-critical — the platform team exists primarily to keep ELK running
+- AVOID: Large tech companies where ELK is one of many pain points (Discord, Goldman Sachs,
+  Stripe, BBVA) — they have dedicated teams and Elastic consulting. Not our ICP.
+
 NOT:
 - Individual contributors without team lead / manager title
 - Contractors, job seekers, "open to work"
 - Competitors (Elastic, Splunk, CrowdStrike employees)
 - IT services / consulting companies
+- Companies where ELK is a side concern, not core infrastructure
 ```
 
 ## Search Strategy

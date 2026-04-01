@@ -15,28 +15,37 @@
 - Mission-critical ELK stack maintainers (not contractors, not job-seekers)
 - Finding patterns through conversations, not sales pitches
 
-### Target Persona (Refined 2026-03-31)
-**ICP: VPs and Team Leads responsible for understaffed ELK/platform teams**
+### Target Persona (Refined 2026-04-01)
+**ICP: VPs and Team Leads at SMALL-MEDIUM companies where ELK is mission-critical**
 
 **Must Have:**
-- VP ofPlatform/Infrastructure, Director ofSRE, or Team Lead
+- VP of Platform/Infrastructure, Director of SRE, or Team Lead
+- **Small-to-medium company** (50-500 employees ideal, or team of 2-10 engineers)
+- **ELK is mission-critical** — the company runs on ELK, it's not just one of many tools
 - Responsible for team productivity and incident response
-- Managing small team (5-20 engineers) maintaining mission-critical ELK
+- Managing understaffed team
 - NOT job seeking, NOT open to work
 - NOT at IT services/consulting companies
 
-**Why:**
-- They feel the pain of understaffing most acutely
-- They field requests from other teams and can't deliver fast enough
-- They have budget authority (headcount budget, not tooling budget)
-- They're responsible for team velocity and on-call burden
+**Size Refinement (2026-04-01):**
+- Large companies (Discord, Goldman Sachs, Stripe, BBVA, Wayfair) are NOT ideal ICP
+- They have large platform teams, dedicated Elastic consulting, and DSE support
+- Their ELK pain is one of many problems, not the core bottleneck
+- We want: **small/medium company where 1-3 engineers manage ELK and it's absolutely critical**
+
+**Why small-medium + mission-critical:**
+- A 10-person DevOps team at a 200-person fintech where ELK goes down = business critical
+- The VP/Director personally feels the pain every day
+- Headcount budget exists but hiring is slow/expensive
+- ELK is so central that "AI help" is a no-brainer
 
 **NOT Good Fits:**
-- Individual contributors without budget influence (bottom-up adoption won't work)
+- Individual contributors without budget influence
 - Contractors/C2C (temporary, no influence)
 - Job seekers (leaving, can't advocate)
 - IT services companies (they provide ELK support to clients)
 - People at Elastic/Splunk (competitors)
+- Large enterprises with big platform teams (Discord, Goldman, Stripe, BBVA, etc.)
 
 **Strategic Pivot (2026-03-31):**
 - Originally: Bottom-up, Claw Code style (developers adopt it)

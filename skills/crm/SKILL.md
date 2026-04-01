@@ -5,19 +5,32 @@ Manage the `vp_prospect` CRM object: adding prospects, updating fields, querying
 ## vp_prospect Object Schema
 
 **Object ID:** `(SELECT id FROM objects WHERE name = 'vp_prospect')`
+**Field IDs (verified, do not guess):**
+- Full Name: `275e088b-f489-4fa4-bb17-660ad0794d46`
+- Title: `384dc5da-8ca4-400c-b436-80c3d6905c07`
+- Company: `ff7d4277-1ffb-43b3-9681-7d72ee49b00e`
+- Company Size: `d35cd7ab-87b3-449a-bd7e-fe94ee5ac700`
+- LinkedIn URL: `ad1709b9-ac4f-44dd-b241-656f76b6a903`
+- Status: `494ad717-d3a1-4d34-b79c-ccfcaa63ac6d`
+- Priority: `d2a82c40-5ac1-4ade-be7e-e2574dfb85b3`
+- Pain Signals: `4dd04f7e-2a0d-4cf0-aa8e-261e8f36dce5`
+- Last Activity: `43e178ff-d8b7-4289-9c16-6427a2ddfd59`
 
-### Fields
-| Field Name | Field ID | Type | Notes |
-|------------|----------|------|-------|
-| Full Name | `275e088b-f489-4fa4-bb17-660ad0794d46` | text | |
-| Title | `384dc5da-8ca4-400c-b436-80c3d6905c07` | text | Exact title from LinkedIn |
-| Company | `ff7d4277-1ffb-43b3-9681-7d72ee49b00e` | text | |
-| Company Size | `d35cd7ab-87b3-449a-bd7e-fe94ee5ac700` | text | e.g. "1,001-5,000" |
-| LinkedIn URL | `ad1709b9-ac4f-44dd-b241-656f76b6a903` | text | Full URL |
-| Status | `494ad717-d3a1-4d34-b79c-ccfcaa63ac6d` | text | Pipeline status |
-| Priority | `d2a82c40-5ac1-4ade-be7e-e2574dfb85b3` | text | High/Medium/Low |
-| Pain Signals | `4dd04f7e-2a0d-4cf0-aa8e-261e8f36dce5` | text | Research notes |
-| Last Activity | `43e178ff-d8b7-4289-9c16-6427a2ddfd59` | text | e.g. "3w ago" |
+## company Object Schema
+
+**Object ID:** `seed_obj_company_0000000000000`
+**Field IDs (verified, do not guess):**
+- Company Name: `seed_fld_company_name_000000000`
+- Industry: `seed_fld_company_industry_00000`
+- Type: `seed_fld_company_type_000000000` (9 zeros — common mistake is 6 zeros)
+- Website: `seed_fld_company_website_000000`
+- Notes: `seed_fld_company_notes_00000000`
+
+### Recommended Company Types
+- `Target - Hot` — Small/medium company, ELK is mission-critical, strong prospect fit
+- `Target - Medium` — Decent fit, worth exploring
+- `Too Large` — Company too big with too many resources (Discord, Goldman, Stripe, etc.)
+- `Not ICP` — Doesn't match target persona
 
 ## Status Pipeline
 ```
@@ -122,6 +135,24 @@ UPDATE entry_fields
 SET value = CONCAT(value, ' | {new note}'), updated_at = NOW()
 WHERE entry_id = '{entry_id}'
   AND field_id = '4dd04f7e-2a0d-4cf0-aa8e-261e8f36dce5';
+```
+
+## Adding a Company
+
+```sql
+BEGIN TRANSACTION;
+
+INSERT INTO entries (id, object_id, created_at, updated_at) 
+VALUES ('{uuid}', 'seed_obj_company_0000000000000', NOW(), NOW());
+
+INSERT INTO entry_fields (entry_id, field_id, value, created_at, updated_at) VALUES
+('{uuid}', 'seed_fld_company_name_000000000', '{Company Name}', NOW(), NOW()),
+('{uuid}', 'seed_fld_company_industry_00000', '{Industry}', NOW(), NOW()),
+('{uuid}', 'seed_fld_company_type_000000000', '{Type}', NOW(), NOW()),  -- 9 zeros!
+('{uuid}', 'seed_fld_company_website_000000', '{Website}', NOW(), NOW()),
+('{uuid}', 'seed_fld_company_notes_00000000', '{Notes}', NOW(), NOW());
+
+COMMIT;
 ```
 
 ## Quick Stats
