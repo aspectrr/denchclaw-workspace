@@ -1,11 +1,11 @@
 ---
 name: icp-team-leads
-description: "Find and connect with team leads/VPs running ELK/observability stacks at ICP companies. Use when: (1) Researching contacts at a company that passed ICP company research, (2) Finding the right person to reach out to (VP Platform, Director SRE, Team Lead), (3) Verifying someone's role includes ELK/observability, (4) Connecting with decision-makers on LinkedIn. Workflow: Company from CRM → DuckDuckGo → PinchTab → LinkedIn MCP (verify + connect) → Add to team_leads CRM. Look for ELK in experience/skills. This skill DOES connect on LinkedIn."
+description: "Find and connect with team leads/VPs running observability/ELK stacks at ICP companies. Use when: (1) Researching decision-makers at a company that passed ICP company research, (2) Finding VP/Director/Team Lead contacts (VP Platform, Director SRE, Infrastructure Lead), (3) Verifying someone's role includes observability/platform, (4) Connecting with buyers who have budget authority. Workflow: Company from CRM → DuckDuckGo → PinchTab → LinkedIn MCP (verify + connect) → Add to team_leads CRM. Look for observability/platform/infrastructure in experience. This skill DOES connect on LinkedIn."
 ---
 
 # ICP Team Leads Skill
 
-Find and connect with team leads/VPs who run ELK/observability stacks at ICP companies. These are your buyers—they have budget authority and feel the pain directly.
+Find and connect with team leads/VPs who run observability/ELK stacks at ICP companies. These are your buyers—they have budget authority and feel the pain directly.
 
 ## Who You're Looking For
 
@@ -16,29 +16,38 @@ Find and connect with team leads/VPs who run ELK/observability stacks at ICP com
 - Engineering Manager (Platform/Observability)
 - Head of Infrastructure
 
-**Key Signals (Look for ELK in):**
-- Experience → "Manage ELK stack", "Built observability platform", "Elasticsearch infrastructure"
-- Skills → Elasticsearch, Logstash, Kibana, ELK, Elastic, observability, monitoring
-- Bio → Mentions ELK, observability, logging infrastructure
+**Key Signals (Look for ANY ofThese):**
+
+**Primary (Decision-Maker Signals):**
+- Title indicates platform/infrastructure/SRE leadership
+- Manages team responsible for observability
+- Budget authority (hiring, toolingdecisions)
+
+**Bonus (Stronger Match):**
+- Experience mentions: ELK, Elasticsearch, observability platform
+- Skills: Elasticsearch, monitoring, logging, observability
+- Bio: Platform infrastructure, uptime, reliability
 
 **Why These People:**
 - They have **budget authority** (headcount budget, not tooling budget)
 - They feel the **pain directly** (team can't deliver fast enough)
 - They're **understaffed** but can't hire quickly
-- ELK is **mission-critical** to their success
+- ELK/observability is **mission-critical** to their success
+
+**Note:** Team leads may not have "ELK" explicitly in their profile—they manage the team, not necessarily hands-on with the stack. Look for: observability, platform, infrastructure, SRE, reliability, uptime.
 
 ## Prerequisites
 
 **Before using this skill:**
 1. Company must pass ICP company research (use `icp-company-research` skill first)
 2. Company should be in the `companies` CRM with Status = "Target" or "Hot"
-3. Have company LinkedIn URL ready for research
+3. Have company name ready for research
 
 ## Research Workflow
 
 ### Step 1: Get Company from CRM
 
-Query the team_leads or companies CRM to find the company you're researching:
+Query the companies CRM to find the company you're researching:
 
 ```sql
 SELECT * FROM v_companies WHERE Status IN ('Target', 'Hot')
@@ -56,7 +65,7 @@ Find potential team leads at the company:
 "[Company Name]" "Director SRE" LinkedIn
 "[Company Name]" "Platform Team Lead" LinkedIn
 "[Company Name]" "observability" "engineering manager" LinkedIn
-"[Company Name]" "Elasticsearch" "infrastructure" LinkedIn
+"[Company Name]" "infrastructure" "director" LinkedIn
 ```
 
 **Extract from results:**
@@ -69,7 +78,7 @@ Find potential team leads at the company:
 
 Use PinchTab when:
 - DuckDuckGo results are thin
-- Need to browse company team page
+- Need to browse company team/leadership page
 - Need to find LinkedIn profiles from company website
 
 **PinchTab workflow:**
@@ -88,7 +97,7 @@ Use PinchTab when:
 
 ```
 mcp action=call server=linkedin-mcp tool=search_people params={
-  keywords: "VP Platform Director SRE Team Lead infrastructure",
+  keywords: "VP Platform Director SRE Team Lead infrastructure observability",
   company: "[Company Name]"
 }
 ```
@@ -108,33 +117,37 @@ mcp action=call server=linkedin-mcp tool=get_person_profile params={
 }
 ```
 
-**Analyze for ELK relevance:**
-- **Experience:** Look for ELK/Elasticsearch/observability mentions
-- **Skills:** Check for Elasticsearch, Logstash, Kibana, monitoring
-- **Bio:** Mentions of logging, observability, infrastructure
-- **Current role:** Title should be VP/Director/Lead/Manager
+**Analyze for relevance:**
+- **Title:** VP/Director/Lead/Manager of Platform/SRE/Infrastructure ✅
+- **Experience:** Platform, observability, infrastructure, reliability ✅ (ELK = bonus)
+- **Skills:** Monitoring, observability, reliability ✅ (ELK = bonus)
+- **Bio:** Platform infrastructure, uptime, reliability ✅
 
 #### 4C: Verify Right Person
 
-**Strong Match (Add + Connect):**
+**Strong Match (Connect Immediately):**
 - Title: VP of Platform, Director of SRE, Platform Team Lead
-- Experience: "Manage ELK stack", "Built observability platform"
-- Skills: Elasticsearch, Kibana, observability
-- Company: ICP company (already verified)
+- Experience: Platform, observability, infrastructure (ELK mentioned = bonus)
+- Skills: Monitoring, observability, reliability (ELK = bonus)
+- Company: Verified ICP
 
-**Weak Match (Add but Don't Connect):**
-- Title matches but no ELK mention
-- Engineering lead but unclear if they run observability
-- Need more research to confirm
+**Good Match (Add and Connect):**
+- Title matches target list
+- Experience mentions platform/infrastructure
+- Company is ICP
+
+**Research Needed (Add for Follow-up):**
+- Title indicates leadership but unclear scope
+- Need to verify they manage observability/team
 
 **Not a Match (Skip):**
-- Title doesn't indicate platform/infrastructure
-- No ELK/observability in profile
+- Title doesn't indicate platform/infrastructure leadership
+- No relevant experience
 - Left company or role changed
 
 ### Step 5: Connect on LinkedIn
 
-**ONLY connect with Strong Matches.**
+**Connect with Strong and Good Matches.**
 
 ```
 mcp action=call server=linkedin-mcp tool=send_invitation params={
@@ -145,7 +158,7 @@ mcp action=call server=linkedin-mcp tool=send_invitation params={
 
 **Connection Rules:**
 - Send **blank** connection requests (no note)
-- Only connect with **Strong Matches** (ELK in profile)
+- Connect with **Strong and Good Matches**
 - If connection fails or uncertain, add to CRM with Status = "Not Connected"
 
 ### Step 6: Add to CRM
@@ -158,9 +171,9 @@ Add to `team_leads` object with all research:
 - Company
 - LinkedIn URL
 - Status: Connected / Pending / Not Connected
-- Match Quality: Strong / Weak / Research
-- ELK Relevance: Yes / No / Maybe
-- Notes: What makes them a good fit (or not)
+- Match Quality: Strong / Good / Weak
+- Platform Relevance: Yes / No / Maybe
+- Notes: What makes them a good fit
 
 **Example entry:**
 ```markdown
@@ -169,42 +182,39 @@ Title: Director Platform Engineering
 Company: Foresite Cybersecurity
 LinkedIn: https://linkedin.com/in/thomasemark
 Status: Connected
-Match Quality: Strong
-ELK Relevance: Yes - Google SecOps/SIEM, platform engineering
-Notes: Perfect ICP. MSSP, runs platform team, observability is core business.
+Match Quality: StrongPlatform Relevance: Yes - Runs platform team for MSSP
+Notes: Perfect ICP. Director of platform at MSSP, observability is core business.
 ```
 
 ## Match Scoring
 
 ### Strong Match (Connect Immediately)
 - [x] Title: VP/Director/Lead/Manager of Platform/SRE/Infrastructure
-- [x] Experience mentions ELK/Elasticsearch/observability
-- [x] Skills include Elasticsearch, monitoring, or similar
+- [x] Experience: Platform, observability, infrastructure mentioned
+- [+] ELK mentioned = bonus signal (not required)
 - [x] Company is verified ICP
 
 **Action:** Connect on LinkedIn + Add to CRM (Status: Connected)
 
-### Good Match (Research More)
+### Good Match (Connect)
 - [x] Title matches target list
-- [?] No clear ELK mention, but company uses ELK
+- [x] Experience indicates platform/infrastructure role
 - [x] Company is verified ICP
 
-**Action:** Add to CRM (Status: Not Connected, Match Quality: Good)
-
-**Follow-up:** Use PinchTab to research their background more, or check company tech stack.
+**Action:** Connect on LinkedIn + Add to CRM (Status: Connected)
 
 ### Weak Match (Add for Tracking)
-- [x] Title is close (Engineering Manager, but not platform)
-- [?] Unclear if they manage ELK/observability
+- [x] Title is close (Engineering Manager, but not platform-specific)
+- [?] Unclear if they manage observability/team
 - [x] Company is ICP
 
 **Action:** Add to CRM (Status: Not Connected, Match Quality: Weak)
 
-**Follow-up:** Look for better contact or get introduction.
+**Follow-up:** Research deeper or look for better contact.
 
 ### Not a Match (Skip)
 - [ ] Title doesn't indicate platform/infrastructure leadership
-- [ ] No ELK/observability relevance
+- [ ] No relevant experience
 - [ ] Left company
 
 **Action:** Skip, don't add to CRM.
@@ -220,9 +230,9 @@ Notes: Perfect ICP. MSSP, runs platform team, observability is core business.
 | LinkedIn URL | URL | LinkedIn profile |
 | Status | Select | Not Connected / Pending / Connected / Rejected |
 | Match Quality | Select | Strong / Good / Weak |
-| ELK Relevance | Select | Yes / No / Maybe |
+| Platform Relevance | Select | Yes / No / Maybe |
 | Experience Notes | Long Text | Relevant experience excerpt |
-| Skills | Multi-Select | Elasticsearch, Logstash, Kibana, monitoring, etc. |
+| Skills | Multi-Select | Platform, observability, infrastructure, etc. |
 | Notes | Long Text | Research notes, why they're a fit |
 
 ## LinkedIn MCP Tools Reference
@@ -230,8 +240,8 @@ Notes: Perfect ICP. MSSP, runs platform team, observability is core business.
 | Tool | Purpose | When to Use |
 |------|---------|-------------|
 | `search_people` | Find people by keywords/company | Initial search for candidates |
-| `get_person_profile` | Full profile details | Verify ELK relevance, get title |
-| `send_invitation` | Connect on LinkedIn | Strong matches only |
+| `get_person_profile` | Full profile details | Verify role, experience |
+| `send_invitation` | Connect on LinkedIn | Strong/Good matches, blank message |
 | `get_company_profile` | Company details | Verify company size/industry |
 
 ## Common Scenarios
@@ -239,15 +249,15 @@ Notes: Perfect ICP. MSSP, runs platform team, observability is core business.
 ### Found Multiple Team Leads
 ```
 Query company → 3 potential contacts:
-1. VP Platform (Strong Match - ELK in skills) → Connect
-2. Director SRE (Good Match - platform role, no ELK mention) → Add, don't connect
-3. Engineering Manager (Weak Match - unclear) → Add for tracking
+1. VP Platform (Strong Match - platform experience) → Connect
+2. Director SRE (Good Match - SRE leadership) → Connect
+3. Engineering Manager (Weak Match - unclear scope) → Add, don't connect
 ```
 
 ### Can't Connect (LinkedIn Limit)
 ```
 1. Add to CRM with Status: Not Connected
-2. Notes: "Connection limit reached, retry later" or "LinkedIn blocked connection"
+2. Notes: "Connection limit reached, retry later"
 3. Prioritize Strong matches for retry
 ```
 
@@ -261,7 +271,7 @@ Query company → 3 potential contacts:
 ### Unclear if Right Person
 ```
 1. Add to CRM with Match Quality: Weak
-2. Notes: "Need to verify if they manage ELK/observability"
+2. Notes: "Need to verify if they manage observability/team"
 3. Look for better contact or research deeper
 ```
 
@@ -280,8 +290,9 @@ For each team lead researched:
 | Criteria | Status | Evidence |
 |----------|--------|----------|
 | Title Match | ✅/⚠️/❌ | [Title] |
-| ELK Relevance | ✅/⚠️/❌ | [Where ELK appears] |
+| Platform Relevance | ✅/⚠️/❌ | [Platform/observability mention] |
 | Company ICP | ✅/⚠️/❌ | [ICP status] |
+| ELK Mention | +/— | [If mentioned, where] |
 
 ### Experience Highlights
 - [Relevant experience excerpt]
@@ -299,9 +310,9 @@ For each team lead researched:
 ## Remember
 
 1. **Company First:** Only research team leads at companies that passed ICP company research
-2. **ELK Signals:** Look for ELK/Elasticsearch/observability in experience and skills
+2. **ELK is Bonus:** Team leads may not have ELK explicitly—look for platform/observability/infrastructure
 3. **Title Matters:** VP/Director/Lead/Manager of Platform/SRE = buying power
-4. **Connect with Strong Matches:** Blank connection requests only
+4. **Connect with Strong +Good Matches:** Blank connection requests
 5. **Add Everyone to CRM:** Even weak matches for future tracking
 6. **Status Tracking:** Track connection status for follow-up
 
@@ -309,28 +320,30 @@ For each team lead researched:
 
 ### DuckDuckGo Search Terms
 ```
-"[Company]" "VP Platform" LinkedIn"[Company]" "Director SRE" LinkedIn
-"[Company]" "observability" "engineering" LinkedIn
-"[Company]" "Elasticsearch" "infrastructure" LinkedIn
+"[Company]" "VP Platform" LinkedIn
+"[Company]" "Director SRE" LinkedIn
+"[Company]" "Platform Team Lead" LinkedIn
+"[Company]" "infrastructure" "director" LinkedIn
+"[Company]" "observability" "engineering manager" LinkedIn
 ```
 
 ### LinkedIn MCP Tools
 ```
 search_people → Find candidates by title/company
-get_person_profile → Verify ELK in experience/skills
-send_invitation → Connect (Strong matches only, blank message)
+get_person_profile → Verify platform/observability in experience
+send_invitation → Connect (Strong/Good matches, blank message)
 ```
 
 ### Title Keywords
 ```
 VP Platform, VP Infrastructure, Director SRE, Director Platform,
 Platform Team Lead, Observability Lead, Engineering Manager Platform,
-Head of Infrastructure, SRE Lead
+Head of Infrastructure, SRE Lead, Infrastructure Manager
 ```
 
-### ELK Keywords to Look For
+### Experience Keywords (Any of These)
 ```
-Elasticsearch, Logstash, Kibana, ELK, Elastic,
-observability, monitoring, logging infrastructure,
-"manage ELK", "build observability platform"
+platform, observability, infrastructure, reliability, SRE,
+uptime, monitoring, logging, availability, distributed systems
+(ELK/Elasticsearch are bonus signals, not required)
 ```
