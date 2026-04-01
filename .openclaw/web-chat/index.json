@@ -1,16 +1,131 @@
 [
   {
-    "id": "d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
-    "title": "Okay, I want to set up a way to like mark down exactly what ...",
-    "createdAt": 1774987070174,
-    "updatedAt": 1774989051590,
+    "id": "28c1c067-d45c-484f-8bd2-063d3dd0f9fd",
+    "title": "Hey, can we build a company ICP research skill that so this ...",
+    "createdAt": 1775059364387,
+    "updatedAt": 1775059659965,
     "messageCount": 4,
     "workspaceName": "default",
     "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
     "workspaceAgentId": "main",
-    "gatewaySessionKey": "agent:main:web:d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
+    "gatewaySessionKey": "agent:main:web:28c1c067-d45c-484f-8bd2-063d3dd0f9fd",
     "agentMode": "workspace",
-    "lastActiveAt": 1774987070174
+    "lastActiveAt": 1775059364387
+  },
+  {
+    "id": "b8479276-3265-44fd-9659-eed772475104",
+    "title": "Hey, so now that we kind of have a golden idea of what we wa...",
+    "createdAt": 1775058202647,
+    "updatedAt": 1775059228570,
+    "messageCount": 7,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:b8479276-3265-44fd-9659-eed772475104",
+    "agentMode": "workspace",
+    "lastActiveAt": 1775058202647
+  },
+  {
+    "id": "agent:main:subagent:48d5679a-9539-4deb-8517-9d5da936c6b4",
+    "title": "New Chat",
+    "createdAt": 1775053127373.6233,
+    "updatedAt": 1775053127374.2563,
+    "messageCount": 1
+  },
+  {
+    "id": "b29b058b-a005-4d52-aea0-0615181c1481",
+    "title": "Hey, so something I was talking with you about was that like...",
+    "createdAt": 1775050778017,
+    "updatedAt": 1775056500451,
+    "messageCount": 34,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:b29b058b-a005-4d52-aea0-0615181c1481",
+    "agentMode": "workspace",
+    "lastActiveAt": 1775050778017
+  },
+  {
+    "id": "ea93ec43-0eca-4651-a797-5e717fc414a1",
+    "title": "send connection requests to these new VP prospects. And then...",
+    "createdAt": 1775038916204,
+    "updatedAt": 1775041677930,
+    "messageCount": 16,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:ea93ec43-0eca-4651-a797-5e717fc414a1",
+    "agentMode": "workspace",
+    "lastActiveAt": 1775038916204
+  },
+  {
+    "id": "agent:main:subagent:b153f72b-c5ea-4d90-a0c4-c75e7acf5886",
+    "title": "New Chat",
+    "createdAt": 1775040039756.8596,
+    "updatedAt": 1775040039757.497,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:86ea756b-32cc-456b-8c8c-0961daef37d8",
+    "title": "New Chat",
+    "createdAt": 1775039901959.5125,
+    "updatedAt": 1775039901960.0266,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:8fde6687-a586-4d85-a967-c334b6ae5997",
+    "title": "New Chat",
+    "createdAt": 1775039747418.93,
+    "updatedAt": 1775039749420.739,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:d439974c-bc4a-42b4-8a28-753ccfa34194",
+    "title": "New Chat",
+    "createdAt": 1775039747052.4714,
+    "updatedAt": 1775039747052.9353,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:b7d257d6-339e-4498-a772-ae3f847840e5",
+    "title": "New Chat",
+    "createdAt": 1775039744660.2612,
+    "updatedAt": 1775039746644.781,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:6a429dde-ca56-48a7-a4e8-0d2969b16b35",
+    "title": "New Chat",
+    "createdAt": 1775039741399.7744,
+    "updatedAt": 1775039743402.8027,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:79f2d149-b01a-4ef5-875d-60d6b7d6596c",
+    "title": "New Chat",
+    "createdAt": 1775039738844.4924,
+    "updatedAt": 1775039740846.8772,
+    "messageCount": 1
+  },
+  {
+    "id": "agent:main:subagent:a1b490d3-8a34-46db-95ff-e4cb4c6617ef",
+    "title": "New Chat",
+    "createdAt": 1775039735206.8457,
+    "updatedAt": 1775039735207.528,
+    "messageCount": 1
+  },
+  {
+    "id": "bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
+    "title": "Hey, I just added some new skills to you. I added a market r...",
+    "createdAt": 1774966799733,
+    "updatedAt": 1775038851020,
+    "messageCount": 28,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774966799733
   },
   {
     "id": "a2cd8123-4cd2-4d66-b27c-f8798c136822",
@@ -24,6 +139,19 @@
     "gatewaySessionKey": "agent:main:web:a2cd8123-4cd2-4d66-b27c-f8798c136822",
     "agentMode": "workspace",
     "lastActiveAt": 1774974444414
+  },
+  {
+    "id": "d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
+    "title": "Okay, I want to set up a way to like mark down exactly what ...",
+    "createdAt": 1774987070174,
+    "updatedAt": 1774989051590,
+    "messageCount": 4,
+    "workspaceName": "default",
+    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
+    "workspaceAgentId": "main",
+    "gatewaySessionKey": "agent:main:web:d93321a5-6cb0-4be8-8310-a8851ab7dbfa",
+    "agentMode": "workspace",
+    "lastActiveAt": 1774987070174
   },
   {
     "id": "agent:main:subagent:e3e884f8-338b-4eca-ab79-c7339e02b03c",
@@ -45,19 +173,6 @@
     "createdAt": 1774967008598.5305,
     "updatedAt": 1774967008599.6804,
     "messageCount": 1
-  },
-  {
-    "id": "bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
-    "title": "Hey, I just added some new skills to you. I added a market r...",
-    "createdAt": 1774966799733,
-    "updatedAt": 1775038685935,
-    "messageCount": 26,
-    "workspaceName": "default",
-    "workspaceRoot": "/Users/collinpfeifer/.openclaw-dench/workspace",
-    "workspaceAgentId": "main",
-    "gatewaySessionKey": "agent:main:web:bcabaca0-04cd-4888-8ec2-c139fd7d1b51",
-    "agentMode": "workspace",
-    "lastActiveAt": 1774966799733
   },
   {
     "id": "c0b3ae93-ff52-47c1-90b2-af3530b456c1",

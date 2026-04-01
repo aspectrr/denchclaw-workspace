@@ -3,18 +3,18 @@ name: "company"
 description: "Company tracking"
 icon: "building-2"
 default_view: "table"
-entry_count: 3
+entry_count: 7
 fields:
   - name: "Company Name"
     type: text
     required: true
   - name: "Industry"
     type: enum
-    values: ["Technology","Finance","Healthcare","Education","Retail","Other"]
+    values: ["Technology","Finance","Healthcare","Education","Retail","Cybersecurity","Logistics","Other"]
   - name: "Website"
     type: text
   - name: "Type"
     type: enum
-    values: ["Client","Partner","Vendor","Prospect"]
+    values: ["Client","Partner","Vendor","Prospect","Target - Hot","Target - Medium","GOLDEN EXAMPLE"]
   - name: "Notes"
     type: richtext

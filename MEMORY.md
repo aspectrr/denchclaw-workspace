@@ -3,11 +3,21 @@
 ## User Profile
 
 ### Basic Info
-- **Name:** (not yet captured)
+- **Name:** Collin
 - **Role:** ELK Stack Engineer (day job)
+- **Company:** OmniSock SOC (subsidiary of Indiana University)
+- **Company Size:** Small team (50-500 employees range)
 - **Side Project:** Building AI tool for ELK debugging/automation
 - **Work Context:** SOC-as-a-service company using Elastic as SIEM
 - **Availability:** Nights and weekends
+
+### OmniSock SOC (Golden Example ICP)
+**Why this is the perfect customer profile:**
+- Small team where ELK is **mission-critical** — it's their core SIEM product
+- Cannot afford to hire more people → needs **AI leverage** for ELK work
+- Team is underwater: 70-80% of time on debugging, DLQs, Kafka lag, pipeline building
+- Tried Codex/Copilot but hit walls: no safe Ansible execution, no on-prem access, no GitHub/Slack integration, no persistent context
+- **This is who we're building for**
 
 ### What They Care About
 - Learning from peers about ELK pain points
@@ -28,10 +38,11 @@
 - NOT at IT services/consulting companies
 
 **Size Refinement (2026-04-01):**
-- Large companies (Discord, Goldman Sachs, Stripe, BBVA, Wayfair) are NOT ideal ICP
+- **Large companies are NOT the target** (Discord, Goldman Sachs, Stripe, BBVA, Wayfair, Sophos, etc.)
 - They have large platform teams, dedicated Elastic consulting, and DSE support
 - Their ELK pain is one of many problems, not the core bottleneck
-- We want: **small/medium company where 1-3 engineers manage ELK and it's absolutely critical**
+- **We want: small/medium company where 1-3 engineers manage ELK and it's absolutely critical**
+- **OmniSock SOC is the golden example** — small team, ELK = core product, cannot hire more, needs AI leverage
 
 **Why small-medium + mission-critical:**
 - A 10-person DevOps team at a 200-person fintech where ELK goes down = business critical
@@ -39,13 +50,21 @@
 - Headcount budget exists but hiring is slow/expensive
 - ELK is so central that "AI help" is a no-brainer
 
+**KEY SIGNAL: ELK = Revenue (2026-04-01)**
+- Best ICP: Companies where ELK/observability IS the product (SOC/CSOC, SIEM providers)
+- At OmniSock SOC, Elastic SIEM is how they make money → mission-critical
+- Look for: MSSPs, SOC-as-a-service, security companies, observability platforms
+- These companies can't afford ELK downtime → AI help is purchase, not discussion
+
 **NOT Good Fits:**
 - Individual contributors without budget influence
 - Contractors/C2C (temporary, no influence)
 - Job seekers (leaving, can't advocate)
 - IT services companies (they provide ELK support to clients)
 - People at Elastic/Splunk (competitors)
-- Large enterprises with big platform teams (Discord, Goldman, Stripe, BBVA, etc.)
+- **Large enterprises with big platform teams** (Discord, Goldman, Stripe, BBVA, Wayfair, Sophos, etc.)
+- Companies where ELK is "one of many tools" rather than core business
+- Engineers at large companies (no influence path)
 
 **Strategic Pivot (2026-03-31):**
 - Originally: Bottom-up, Claw Code style (developers adopt it)
@@ -111,17 +130,83 @@
 - [ ] Hand off to Collin for conversation follow-ups
 - [ ] **Important:** Collin should update Connection Quality after conversations to improve ICP targeting
 
-### 3. Lead Pipeline Status (2026-03-30)
-**Total Leads:** 28 (18 from Reddit + 12 from LinkedIn)
-**By ICP Fit:**
-- **Fit - Ideal:** 0 (need more research)
-- **Fit - Good:** 0 (need more research)
-- **Maybe:** 4 (need company size verification)
-- **Unknown:** 8 (Reddit leads - need follow-up)
-- **Out - Job Seeker:** 2
-- **Out - Competitor:** 3 (Elastic/Splunk)
-- **Out - Consultant:** 1
-- **Out - IT Services:** 2 (LTIMindtree, CGI)
+### 3. Lead Pipeline Status (2026-04-01)
+**MAJOR CLEANUP:** Researched all 14 VP prospects and disqualified 13 based on ICP criteria.
+
+**VP Prospect Research Results (2026-04-01):**
+
+**QUALIFIED (1 remaining):**
+- **Thomas Mark - Foresite Cybersecurity (51-200 employees)** - Director Platform Eng
+  - **Why this is a HOT target:**
+    - MSSP (Managed Security Services Provider) - security monitoring IS their business
+    - Uses Google SecOps/SIEM - similar to OmniSock SOC's Elastic usage
+    - Small team (51-200), cannot hire more → needs AI leverage
+    - 95% customer retention rate, hiring security engineers
+    - Perfect match for "ELK/observability = how they make money" ICP
+  - LinkedIn: https://linkedin.com/in/thomasemark
+
+**DISQUALIFIED (13 removed):**
+| Company | Size | Why Not Fit |
+|---------|------|-------------|
+| Endeavour Group | 10,000+ | Too large, retail/drinks company |
+| Accenture (Sunil Singh) | 500,000+ | Way too large, IT consulting |
+| Collette Health | 51-200 | Healthcare virtual care, not observability |
+| Dagster Labs | 51-200 | Data orchestration tool, not security/observability |
+| Indiana Farmers Insurance | 201-500 | Insurance company, ELK not core |
+| Ledger | 501-1,000 | Crypto hardware wallet, borderline |
+| Project Lead The Way | 201-500 | Education nonprofit |
+| SchooLinks | 51-200 | Education technology |
+| Synchronoss | 501-1,000 | Cloud solutions, borderline |
+| OPENLANE | 501-1,000 | Automotive/fintech, not observability core |
+| Finom | Unknown | Fintech, not observability-focused |
+| StoneX Group | Unknown | Financial services, not observability |
+| Omar Din profile | N/A | Healthcare executive, wrong industry |
+
+**Key Insight:** Most prospects work at companies where observability is NOT their core business. The only company where ELK/observability IS how they make money is Foresite Cybersecurity (MSSP).
+
+**Companies in CRM (7 total):**
+- OmniSock SOC - GOLDEN EXAMPLE
+- TVH - Target - Hot
+- ID Logistics - Target - Hot
+- Ameritas - Target - Medium
+- Ray Security - Target - Medium
+- FRAIM - Target - Medium
+- **Foresite Cybersecurity - Target - Hot (NEW)**
+
+**Strategy Update:**
+- **Focus on MSSPs, SOC-as-a-service, SIEM providers** - these are the true ICP
+- Companies where "ELK/observability IS the product" → hot targets
+- Continue LinkedIn outreach to find more MSSPs/security companies
+- Look for: "Managed Security Services", "SOC", "SIEM", "Security Monitoring", "MSSP"
+
+### 4. MSSP/SOC-as-a-Service Target Companies (2026-04-01)
+**Research from Managed SIEM Provider Lists:**
+
+**HOT TARGETS (51-200 employees, SIEM/SOC core business):**
+
+| Company | Size | Notes | LinkedIn |
+|---------|------|-------|----------|
+| **UnderDefense** | 51-200 employees | New York, NY. MAXI platform - Agentic AI Security + Compliance. 200+ customers. SIEM/MDR/XDR. Perfect ICP. | TBD |
+| **Foresite Cybersecurity** |51-200 employees | MSSP. Thomas Mark - Director Platform Eng. Google SecOps/SIEM. Perfect ICP. | https://linkedin.com/in/thomasemark |
+| **Eventus Security** | TBD | Ranked #64 MSSP globally. SOC as a Service, XDR-powered. India/Saudi Arabia Cyber Defense Centers. | TBD |
+| **Netsurion** | 25-500 employees | SMB focused. Co-managed SIEM via EventTracker platform. PCI DSS compliance. | TBD |
+| **Alert Logic** | SMBs | AWS-focused managed SIEM. Part of Fortra. Compliance-driven. | TBD |
+
+**BORDERLINE (might be too big):**
+- **Expel** - 100-5,000 employees target - MDR, automation-first
+- **Red Canary** - 200-5,000 employees target - Endpoint-focused MDR
+
+**NOT ICP (too large):**
+- Arctic Wolf - $541M revenue, 5.5K customers (too big)
+- Taegis - 1,000+ employees target
+- Secureworks - Large enterprise MSSP
+- IBM Security, Deloitte, Accenture, EY - Giants
+
+**Key Research Findings:**
+1. **UnderDefense** is a PERFECT match - same size as Foresite, SIEM/MDR is core business, 51-200 employees
+2. Managed SIEM providers are ideal because ELK/observability IS their product
+3. Size: 50-500 employees is the sweet spot where they feel pain but can't hire
+4. Look for "Managed Detection and Response (MDR)", "Managed SIEM", "SOC-as-a-Service"
 
 ---
 

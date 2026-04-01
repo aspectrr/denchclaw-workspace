@@ -1,0 +1,31 @@
+id: "obj_team_leads_001"
+name: "team_leads"
+description: "Team Leads and VPs with budget authority"
+icon: "users"
+default_view: "table"
+entry_count: 1
+fields:
+  - name: "Full Name"
+    type: text
+    required: true
+  - name: "Title"
+    type: text
+  - name: "Company"
+    type: text
+  - name: "Company Link"
+    type: reference
+    object: "company"
+  - name: "Company Size"
+    type: text
+  - name: "LinkedIn URL"
+    type: text
+  - name: "Description"
+    type: text
+  - name: "Status"
+    type: enum
+    values: ["Not Connected","Pending","Connected","Responded","Conversation"]
+  - name: "Priority"
+    type: enum
+    values: ["Low","Medium","High"]
+  - name: "Notes"
+    type: richtext
