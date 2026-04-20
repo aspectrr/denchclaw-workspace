@@ -45,6 +45,18 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+### ⏰ Write to Daily Memory PROACTIVELY
+
+Don't wait for compaction or heartbeat to save important info. Write to `memory/YYYY-MM-DD.md` throughout the day when:
+
+- You learn something new about the user or their projects
+- You make a decision or form an opinion worth remembering
+- Something significant happens in a conversation
+- You notice a pattern or insight
+- The user shares preferences, interests, or context
+
+**Pro tip:** At the end of each significant conversation, take 30 seconds to save the key takeaways to daily memory. Future you will thank present you!
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

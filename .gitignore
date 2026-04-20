@@ -1,0 +1,25 @@
+# Memory / personal data
+memory/
+MEMORY.md
+
+# User / task plans
+USER.md
+task_plan.md
+
+# Sensitive business folders
+team_leads/
+company/
+conversation/
+engineering/
+task/
+
+# Temp & runtime
+tmp/
+.openclaw/
+workspace.duckdb
+skills-lock.json
+
+# Other
+feedback/
+.agents/
+.clawhub/
